@@ -6,7 +6,7 @@ var fs = require('fs');
 var vm = require('vm');
 
 var HANDLEBARSJS = fs.readFileSync(__dirname + '/../vendor/handlebars-1.0.0.js', 'utf8')
-var EMBERJS = fs.readFileSync(__dirname + '/../vendor/ember-1.0.0-rc.7.js', 'utf8')
+var EMBERJS = fs.readFileSync(__dirname + '/../vendor/ember-1.0.0.js', 'utf8')
 
 function getBaseSandbox() {
 
@@ -59,7 +59,7 @@ function getContext(sandboxExtras){
   for (var attrname in sandboxExtras){
     sandbox[attrname] = sandboxExtras[attrname];
   }
-  
+
   // create a context for the vm using the sandbox data
   var context = vm.createContext(sandbox)
 
