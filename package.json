@@ -1,5 +1,5 @@
 {
-    "name" : "ember-handlebars",
+    "name" : "ember-templates",
     "version" : "1.0.0",
     "description" : "Precompile Ember.js templates with Handlebars",
     "main" : "./src/index.js",
@@ -11,7 +11,7 @@
     ],
 
     "bin": {
-        "ember-handlebars": "./bin/ember-handlebars",
+        "ember-templates": "./bin/ember-handlebars",
         "ember-render": "./bin/ember-render"
     },
 
